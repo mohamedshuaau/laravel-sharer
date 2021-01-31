@@ -45,6 +45,18 @@ If you want to render a button instead of the link, you can simply pass in a 4th
 
 You will be required to link fontawesome for buttons to work as the buttons icons uses fontawesome.
 
+Sharing a Post (example):
+```php
+//rending a button
+{!! sharer('facebook', route('posts.show', $post->slug), [], true) !!}
+```
+```html
+<!-- using the link inside an anchor tag in blade -->
+<a href="{{ sharer('facebook', route('posts.show', $post->slug), []) }}" class="facebook-icon">
+    <i class="fab fa-facebook-f"></i>
+</a>
+```
+
 Some of the Socials expects extra parameters. In that case, you could simply pass them as 'options' for the third parameter
 like so:
 
