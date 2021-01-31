@@ -1,0 +1,25 @@
+{
+    "name": "mohamedshuaau/laravel-sharer",
+    "description": "A package for Laravel which allows users to generate and share links on Social Medias",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Shuaau",
+            "email": "shuaaum@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shuaau\\LaravelSharer\\": "src/"
+        },
+        "files": [
+            "./helpers/helpers.php"
+        ]
+    }
+}
