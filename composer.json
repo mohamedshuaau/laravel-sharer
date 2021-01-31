@@ -21,5 +21,15 @@
         "files": [
             "./helpers/helpers.php"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shuaau\\LaravelSharer\\LaravelSharerServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSharer": "Shuaau\\LaravelSharer\\Facades\\LaravelSharer"
+            }
+        }
     }
 }
